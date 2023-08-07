@@ -1,0 +1,3294 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&family=Roboto:ital,wght@1,300&display=swap');
+
+
+/* ==================================================================================================== */
+/* ========================================start NOOr ==================================================== */
+
+:root {
+    --mainColor: rgb(161, 34, 34);
+}
+
+/*----------------------------- available tour css: ---------------------------------- */
+.header_imgProfile {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.circleProfileImg {
+    position: absolute;
+    bottom: -30px;
+    left: 32%;
+    width: 80px !important;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.tour-info {
+    border: 1px solid #969696;
+}
+
+.tour-info a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #969696;
+}
+
+.tour-info h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    color: #333;
+
+}
+
+.tour-info h3:hover {
+    color: var(--mainColor);
+}
+
+.line {
+    width: 100%;
+    height: .7px;
+    background-color: #969696;
+    margin: 15px 0;
+    position: relative;
+}
+
+.line::before {
+
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    top: -1;
+    left: 38%;
+    background-color: var(--mainColor);
+
+}
+
+.tour-info .icons span {
+    font-size: 17px;
+    padding-right: 7px;
+    color: #716f8e;
+}
+
+.price {
+    color: red;
+    font-weight: 600;
+}
+
+.tour-poster .overflow-hidden img {
+    transform: .5s ease;
+    width: 343px;
+    height: 227px;
+}
+
+.tour-poster .overflow-hidden img:hover {
+    transform: scale(1.09);
+    transition: .7s;
+
+}
+
+.tour-poster .overflow-hidden {
+    position: relative;
+}
+
+
+
+.tour-card .tour-poster .overflow-hidden img:hover .btn-card {
+    /* opacity: 1; */
+    /* transform:scale(.8) ; */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
+    transition: .7s;
+    color: black;
+    background-color: #e9ecef;
+}
+
+.owl-nav {
+    display: none;
+}
+
+/* ........................... weather........................... */
+
+
+
+
+.weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-forecast {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.day-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.day-temp {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* *************************************************************** */
+
+
+.popup-screen-weather {
+    z-index: 3;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+    transition: 0.001s ease;
+    transition-property: visibility;
+}
+
+.popup-screen-weather.active {
+    visibility: visible;
+}
+
+.popup-box-weather {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    max-width: 900px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    transform: scale(0);
+    transition: 0.001s ease;
+    transition-property: transform;
+}
+
+.popup-screen-weather.active .popup-box-weather {
+    transform: scale(1);
+}
+
+.popup-box-weather h2 {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.01s ease;
+    transition-property: opacity;
+    color: #ce1212;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.close-btn:hover {
+    opacity: 0.5;
+}
+
+
+
+/* ==================================================================================================== */
+/* ========================================END NOOr ==================================================== */
+
+
+
+
+
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------Bessan-------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&family=Roboto:ital,wght@1,300&display=swap');
+
+
+a {
+    color: #ce1212;
+    ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ec2727;
+    text-decoration: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+
+section {
+
+    padding: 60px 0;
+}
+
+
+/* section-header  why us avaliable gallary contact */
+.section-header {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Amatic SC";
+}
+
+.testimonisa-info {
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.section-header p span {
+    color: #ce1212;
+    ;
+}
+
+.headerimg {
+    width: 400px !important;
+    height: 400px;
+}
+
+/*--------------------------------------------------------------
+# hero Section
+--------------------------------------------------------------*/
+.hero {
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    padding: 160px 0 60px 0;
+    /* background-color: #070707; */
+}
+
+#hero {
+    background-image: url(../img/immg.jpg);
+    width: 100%;
+    height: 600px;
+
+
+
+}
+
+.hero h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #37373f;
+    font-family: "Amatic SC";
+}
+
+.hero h2 span {
+    color: #ce1212;
+}
+
+.hero p {
+    color: #4f4f5a;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.hero .btn-avaliable {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #ce1212;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+.hero .btn-avaliable:hover {
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+@media (max-width: 640px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+    background: #ce1212;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background: #ec2727;
+    color: #fff;
+}
+
+.scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+/* @media (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+} */
+
+/* @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+} */
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 3;
+    height: 90px;
+    /* border-bottom: 1px solid #fff; */
+}
+
+@media (max-width: 575px) {
+    .header {
+        height: 70px;
+    }
+}
+
+
+
+.header .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+
+.header .logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    font-family: #37373f;
+}
+
+.header .logo h1 span {
+    color: #ce1212;
+    ;
+}
+
+
+/* section {
+    scroll-margin-top: 90px;
+} */
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+
+/* @media (min-width: 1200px ) */
+/* min width 500 */
+@media screen and (min-width: 1200px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+    }
+
+    .navbar li {
+        position: relative;
+    }
+
+    /* to make space between two nav  */
+    .navbar>ul>li {
+        /* white-space: nowrap; */
+        padding: 10px 0 10px 28px;
+    }
+
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3px;
+        font-family: #37373f;
+        font-size: 16px;
+        font-weight: 600;
+        color: #7f7f90;
+        white-space: nowrap;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+
+    /* to make line under section   */
+    .navbar>ul>li>a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: rgba(206, 18, 18, 0.8);
+        ;
+        visibility: hidden;
+        width: 0px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .navbar a:hover:before,
+    .navbar li:hover>a:before,
+    .navbar .active:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+        color: #000;
+    }
+
+    .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 28px;
+        margin: 0;
+        padding: 10px 0;
+        z-index: 1;
+        opacity: 0;
+        background: #fff;
+    }
+
+    /* width list */
+    .navbar .dropdown ul li {
+        min-width: 100px;
+    }
+
+    .navbar .dropdown ul a {
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        font-weight: 600;
+
+    }
+
+
+
+    .navbar .dropdown ul a:hover {
+        color: rgba(206, 18, 18, 0.8);
+    }
+
+    .navbar .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+
+
+    .navbar .dropdown .dropdown:hover>ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+    }
+}
+
+/* for log in btn  */
+#btn-Login,
+#btn-feedback,
+#btn-lookfeedback {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 36px;
+    color: #fff;
+    background: #ce1212;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+    border-radius: 50px;
+    border: #ce1212;
+
+}
+
+#btn-Login:hover,
+#btn-feedback:hover,
+#btn-lookfeedback:hover {
+    background: rgba(206, 18, 18, 0.8);
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+/*--------------------------------------------------------------
+# Why Us Section
+--------------------------------------------------------------*/
+.why-us {
+    background-color: #fff;
+}
+
+.why-us .why-box {
+    padding: 30px;
+    background: #ce1212;
+    color: #fff;
+    height: 700px;
+    ;
+}
+
+.why-us .why-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.why-us .why-box p {
+    margin-bottom: 30px;
+}
+
+.why-us .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+}
+
+.why-us .icon-box i {
+    color: #ce1212;
+    margin-bottom: 30px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: rgba(206, 18, 18, 0.1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+
+
+
+.num {
+    color: #ce1212;
+    font-size: 50px;
+    font-family: "Delicious Handrawn";
+
+
+}
+
+.why-us .icon-box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.why-us .icon-box p {
+    font-size: 15px;
+    color: #6c757d;
+}
+
+@media (min-width: 1200px) {
+    .why-us .icon-box:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* --------------------------------------------------------------------- */
+/* ----------------------feedback -------------------------------------- */
+.shadow-effect {
+
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ce1212;
+    background-color: rgb(255, 253, 253);
+
+}
+
+/* width: 200px;
+height: 200px; */
+
+#people-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 200;
+
+}
+
+#suggestFollower .shadow-effect p {
+    font-family: 'Gill Sans';
+    /* font-family: ; */
+    font-size: 25px;
+    margin: 0 0 17px 0;
+    font-weight: 500;
+}
+
+
+
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #ce1212;
+    color: #ffffff;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.addFollower {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #ce1212;
+    color: #ffffff;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#people-testimonials .item-feedbcak,
+#suggestFollower .item-follower {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 80px;
+    opacity: .2;
+    transition: .3sec;
+
+}
+
+#people-testimonials .owl-item.active.center .item-feedbcak,
+#suggestFollower .owl-item.active.center .item-follower {
+    opacity: 3 !important;
+}
+
+.feedback .owl-carousel .owl-item img,
+.followesInHome .owl-carousel .owl-item img {
+    max-width: 90px;
+    margin: 0 auto 17px;
+    border-radius: 50%;
+    border: 3px solid #ce1212;
+
+}
+
+/* ---------------------------End Feedback -------------------------  */
+
+
+
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.gallery {
+    overflow: hidden;
+}
+
+
+.gallery .swiper-slide-active {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .gallery .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .gallery .swiper-slide-active {
+        border: 6px solid #ce1212;
+        padding: 4px;
+        background: #fff;
+        z-index: 1;
+        transform: scale(1.2);
+    }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-item {
+    background: #f4f4f4;
+    padding: 30px;
+    height: 100%;
+}
+
+.contact .info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 0;
+    color: #fff;
+    background: #ce1212;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact .info-item h3 {
+    font-size: 20px;
+    color: #6c757d;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.contact .info-item p {
+    padding: 0;
+    margin: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.contact .info-item .social-links a {
+    font-size: 24px;
+    display: inline-block;
+    color: rgba(55, 55, 63, 0.7);
+    line-height: 1;
+    margin: 4px 6px 0 0;
+    transition: 0.3s;
+}
+
+.contact .info-item .social-links a:hover {
+    color: #ce1212;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 50px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* in gallary  */
+.owner {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------login button --------------------------------------- */
+.login,
+.feedbackRating,
+.addUser,
+.wishListPop,
+.advertisedTourPop,
+.showParticipantPop,
+.note,
+.suggestListPop,
+.addToursPop,
+.prevFeedback,
+.editMainAdminPop,
+.reviewPop,
+.follower_in_profilePOP,
+.following_in_profilePOP,
+.BookingPop,
+.edite_personalInfoPOP {
+
+    display: none;
+    /* Hide popup by default */
+    position: fixed;
+    /* Position the popup */
+    z-index: 1;
+    /* Make sure popup is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.note {
+    margin-top: -50px !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-SignIn {
+    border-color: #ffffff00 !important;
+    color: #c92020;
+}
+
+.login-content,
+.feedback-content,
+.wishlist-content,
+.advertised-content,
+.notefication-content,
+.suggestList-content,
+.viewSugesstTours_content,
+.viewAddTours_content,
+.prevFeedback-content,
+.editInfoForAdmin,
+.editInfoForProfile,
+.editInfoUser,
+.createInfoForPost,
+.review_content,
+.follower-content,
+.following-content,
+.editProfile_inProfile,
+.Booking-content {
+    background-color: #f4f1f1fd;
+    /* White background */
+    margin: 10% auto;
+    /* Center content */
+    padding: 20px;
+    border: 1px solid #c92020;
+    width: 40%;
+    border-radius: 50px;
+    /* height: 500px; */
+    /* border-color: 10px !important; */
+
+}
+
+.viewAddTours_content {
+    width: 45%;
+}
+
+
+
+.notefication-content {
+    background-color: #d4d0d0fd;
+    width: 30%;
+    margin-left: 65%;
+}
+
+
+
+
+.wishlist-content img,
+.follower-content img,
+.following-content img,
+.advertised-content img,
+.Booking-content img {
+
+    width: 50% !important;
+    max-width: 150px;
+    height: 150px;
+
+    /* width: 150px !important; */
+    margin-left: 30px;
+    margin: 10px;
+    border-radius: 25px;
+    /* background-color: #000000; */
+    box-shadow: 0 8px 28px rgba(56, 56, 56, 0.736);
+
+}
+
+.itemSuggestList img,
+.itemPrevFeedbackperson img {
+    /* display: inline-block; */
+    /* position: ; */
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50px;
+    margin-left: 20px !important;
+    margin-top: 5px !important;
+    border: 2px solid rgba(113, 118, 79, 0.763);
+    /* margin: 10px; */
+    /* margin-left: 30px !important; */
+    /* margin: 10px !important; */
+    /* padding-left: -50px; */
+    /* margin-left: 20px; */
+
+}
+
+.suggestList-content .itemSuggestList {
+    width: 450px;
+    height: 130px;
+    margin-left: 5px !important;
+    margin-top: 7px !important;
+    /* margin-left: -15px !important;
+    margin-top: -7px !important; */
+}
+
+.infoSuggestTour p,
+.infoFeedbackTour p {
+    /* background-color: #bab3b3; */
+    /* margin-top: px; */
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bebas Neue";
+}
+
+.locationSuggest {
+    display: inline-block;
+    position: absolute;
+    margin-top: -43px;
+    margin-left: 40px;
+    /* background-color: #ae5353f1; */
+    width: 150px;
+    height: 40px;
+
+}
+
+.cityLocationSuggest {
+    margin-left: 15px;
+    margin-top: -10px;
+}
+
+.suggestApproved {
+    margin-left: -80px;
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+    border-radius: 50px;
+    color: #ce1212;
+    border: 1px solid #ce1212;
+}
+
+.suggestLike {
+    /* background-color: #3b3b3b; */
+    margin-left: 200px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    background-color: #07070700;
+    color: #27272c;
+    margin-top: -5px;
+}
+
+.suggestLike span {
+
+    font-family: "Roboto";
+    font-weight: 600;
+
+}
+
+/* change o on click  */
+.suggestLike :hover {
+    color: #d21818;
+
+}
+
+
+
+.contentWish {
+    display: inline-block;
+    position: relative fixed;
+    /* position: relative; */
+}
+
+.contentWish a i {
+    position: absolute;
+    background-color: #f3f0f0b7;
+    margin-top: -70px;
+    width: 25px;
+    height: 25px;
+    margin-left: -50px;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 7px;
+    color: #ce1212;
+    font-size: 14px;
+}
+
+.contentWish p {
+    width: 200px;
+    position: absolute;
+    font-size: 25px;
+    /* background-color: #37378acb; */
+    font-family: "Bebas Neue" !important;
+    font-weight: 900;
+    /* float: inline-start; */
+    margin-top: -70px !important;
+    /* margin: -50px; */
+
+
+
+    /* justify-content: flex-start; */
+    /* margin: -50px;
+    margin-top: -10px; */
+    /* margin-bottom: 3px; */
+}
+
+.introfav,
+.introPrev,
+.introAllActivities {
+    color: #868484;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.contentWish p span {
+    width: 200px;
+    position: absolute;
+    font-size: 18px;
+    color: #5d5a5a;
+
+    /* font-size: 25px; */
+    /* background-color: #37378acb; */
+    font-family: "Bebas Neue" !important;
+    /* float: inline-start; */
+    margin-top: 40px !important;
+    /* margin: -50px; */
+}
+
+.contentWish .peiceINwishlist {
+    position: absolute !important;
+    margin-top: 30px !important;
+    /* margin-left: 30px; */
+    font-size: 24px;
+    font-weight: 600;
+
+    color: #0c0c0cf1;
+    /* font-family: '' !important; */
+    /* background-color: #070707; */
+
+}
+
+.contentWish button {
+    margin-top: 35px;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    margin-left: 150px;
+    border-radius: 25px;
+    background-color: #e9e9e9;
+    color: #ce1212;
+    border: 1px solid #33333300;
+    font-weight: 600;
+}
+
+.contentFollower button {
+    margin-top: -40px;
+    width: auto;
+    height: 40px;
+    position: absolute;
+    margin-left: 200px;
+    border-radius: 25px;
+    background-color: #564f4f;
+    color: white;
+    border: 1px solid #33333300;
+    font-weight: 600;
+
+}
+
+.contentFollower p {
+    /* width: 200px; */
+    margin-top: 3px;
+    position: absolute;
+    font-size: 25px;
+    /* background-color: #37378acb; */
+    font-family: "Bebas Neue" !important;
+    font-weight: 900;
+    /* float: inline-start; */
+    /* margin-top: 10px !important; */
+    margin: -40px;
+    margin-left: auto;
+
+}
+
+.contentWish,
+.contentFollower {
+    display: inline-block;
+    position: relative fixed;
+    /* position: relative; */
+}
+
+
+.wishlist-content .itemWishList,
+.advertised-content,
+.itemNotefication,
+.suggestList-content .itemSuggestList,
+.itemPrevFeedbackperson,
+.editProfile_inProfile,
+.editinfoForAdmin-content,
+.follower-content .itemFollowerList,
+.following-content .itemFollowingList,
+.Booking-content .itemBooking {
+
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: #7575764a;
+    border-radius: 25px;
+    width: auto;
+
+    /* display: inline-block; */
+}
+
+
+.itemNotefication img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 5px;
+
+}
+
+.nonteText {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 18px;
+    /* background-color: #b84343; */
+    /* background-color:#e31414f1; */
+    color: #000;
+    width: 250px;
+    position: absolute;
+
+}
+
+.followRequest {
+    position: absolute;
+    margin-top: -30px !important;
+}
+
+.acceptBtn {
+    margin-left: 100px;
+
+    /* position: absolute; */
+
+}
+
+.deleteBtn {
+    margin-left: 170px;
+}
+
+.itemNotefication {
+    margin-left: 1px !important;
+    width: 350px;
+    height: 90px;
+    margin-top: 15px;
+    background-color: #61616186;
+    border-radius: 25px;
+}
+
+.itemNotefication:hover,
+.itemSuggestList:hover,
+.itemPrevFeedbackperson:hover {
+    box-shadow: 0 8px 28px rgba(48, 47, 47, 0.242);
+
+
+}
+
+/* .itemNotefication :on */
+
+
+/* .itemsnotefication button{
+    color: #1a191900;
+    background-color: #07070700;
+    border: 1 solid #070707f4;
+
+width: 100%;
+
+
+} */
+.itemNotefication i {
+    /* position: fixed; */
+    /* display: inline-block; */
+    background-color: #ce1212;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 7px;
+    /* margin-top: 10px; */
+    /* margin-top: 80px !important; */
+    border-radius: 50px;
+    color: #ececec;
+
+
+}
+
+.notefication_In_NotefecstionList,
+.addFriend,
+.viewFeedback {
+    margin-left: -30px;
+    /* margin-top: -15px !important; */
+    margin-bottom: 3px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.wishlist-content h3,
+.advertised-content h3,
+.suggestList-content h3,
+.viewAddTours_content h3,
+.prevFeedback-content h3,
+.places h3,
+.addTour_inDetials h3,
+.review_content h3,
+.follower-content h3,
+.following-content h3,
+.Booking-content h3 {
+    text-transform: capitalize;
+    /* font-family: 'Roboto Slab'; */
+    color: #ce1212;
+    font-size: 30px;
+    font-family: "Delicious Handrawn";
+    font-weight: 300;
+
+}
+
+.places h3 {
+    font-size: 24px;
+}
+
+/* ====================================In no item in wishlist=========================== */
+.noItemInWishList {
+    width: auto !important;
+    height: 200px !important;
+    /* text-align: center;
+    justify-content: center; */
+    margin-left: 30% !important;
+    border-radius: 80px !important;
+}
+
+.noNotificationYet,
+.noSuggetTourItem {
+    width: 200px !important;
+    height: 200px !important;
+    /* text-align: center;
+    justify-content: center; */
+    margin-left: 25% !important;
+    border-radius: 80px !important;
+    box-shadow: 0 8px 28px rgba(56, 56, 56, 0.736);
+}
+
+.noSuggetTourItem {
+    margin-left: 10% !important;
+}
+
+
+
+
+.login-content h3 {
+    color: #ce1212;
+    font-size: 30px;
+    font-family: "Delicious Handrawn";
+    font-weight: 300;
+
+
+}
+
+.login-content .info_login p {
+    font-size: 15px;
+    font-weight: 500 !important;
+
+}
+
+.username {
+    border-radius: 50px;
+    width: 100%;
+    height: 45px !important;
+
+}
+
+.login-content .glad {
+    font-family: "Amatic SC";
+    font-size: 25px;
+
+}
+
+
+.login_info {
+    width: 60% !important;
+    margin-left: 90px !important;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #ce1212;
+    border: #ce1212;
+    color: #ececec;
+}
+
+.account-create {
+    background-color: #ececec;
+    border-width: 100%;
+    padding-bottom: #ce1212;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/*---------------------------------------- sign up  -----------------------------------*/
+.infoSign .close {
+    color: #575555;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.infoSign .close:hover,
+.infoSign .close:focus {
+    color: black;
+}
+
+.infoSignUp {
+
+    border-radius: 50px;
+    border: 2px solid #c92020;
+    margin-left: 2% !important;
+    width: 350px !important;
+    height: 40px !important;
+    margin-right: 3%;
+    margin-left: 3% !important;
+}
+
+.contentsign {
+    display: none;
+    /* Hide popup by default */
+    position: fixed;
+    /* Position the popup */
+    z-index: 3;
+    /* Make sure popup is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a dark background */
+
+}
+
+.infoSign {
+    background-color: #f4f1f1fd;
+    /* White background */
+    margin: 5% auto;
+    /* Center content */
+    padding: 30px;
+    border: 1px solid #c92020;
+    width: 62%;
+    border-radius: 50px;
+    height: 600px;
+    background-color: #d9d8d8;
+
+}
+
+.form_SignUp {
+    float: left;
+    width: 320px;
+    height: 550px;
+    margin-right: 5%;
+    margin-top: -10%;
+}
+
+.infoDataSignUp {
+    /* margin-top: 10%; */
+    margin-left: -10%;
+    width: 500px !important;
+
+}
+
+.infoDataSignUp span {
+    font-size: 17px;
+    font-weight: 500;
+
+}
+
+.form_SignUp img {
+    width: 320px !important;
+    height: 450px !important;
+}
+
+.infoSign h2 {
+    font-family: "Amatic SC";
+    font-size: 30px !important;
+
+}
+
+.infoSign .join {
+    font-family: "Delicious Handrawn";
+    color: #ce1212;
+
+
+}
+
+.Submit_Join {
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background: #ce1212;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+    border-radius: 50px;
+    border: #ce1212;
+}
+
+.account-login p {
+    font-weight: 500;
+
+}
+
+/* .img_Client{
+    width: 30px;
+    height: 30px;
+  } */
+.main-div {
+    /* width: 100% !important; */
+    /* height: 2000px !important; */
+    background-color: #edebeb;
+}
+
+
+
+.identy-Profile {
+    padding-top: 60px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    /* margin-left: 200px; */
+
+
+    /* margin-top: 100px !important; */
+
+}
+
+
+
+/* Create four equal columns that floats next to each other */
+
+
+/* Clear floats after the columns */
+
+
+
+
+
+.title h2 {
+
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #7f7f90;
+    text-transform: uppercase;
+}
+
+
+.title p {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Amatic SC";
+
+}
+
+.title span {
+    color: #ce1212;
+}
+
+/* =========================================================================================== */
+/* =========================================================================================== */
+/* Remove default styles */
+.identy-Company {
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.owner-img {
+    width: 55px !important;
+    height: 55px !important;
+    border: 2px solid rgba(206, 18, 18, 0.8);
+}
+
+.content-Tour {
+    width: 90% !important;
+    /* height: 1; */
+    /* height:90% !important; */
+    background-color: #ffffff;
+    border: 2px solid rgba(206, 18, 18, 0.8);
+    margin: auto;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+
+}
+
+.Tour-place {
+    margin-top: 7px;
+    margin-left: 15% !important;
+    margin-bottom: -20px;
+    /* background-color: #000; */
+}
+
+/* main div in carsol in detais tour  */
+.slide {
+    background-color: #c3c3c83d;
+    width: 60% !important;
+    margin-left: 20%;
+    margin-top: 40px;
+
+    border-radius: 50%;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 50px;
+}
+
+.allDetails h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #7f7f90;
+    text-transform: uppercase;
+
+
+}
+
+.allDetails p {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Amatic SC";
+    /* color: #71b4de; */
+
+
+}
+
+.allDetails p span {
+    color: #ce1212;
+}
+
+.allDetails {
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+/* =============================================================================== */
+
+/* Noor details tour in Detils page  */
+.act {
+    color: black;
+    width: 300px !important;
+    height: 80px !important;
+    border: 1px solid black;
+}
+
+.content-step {
+    width: 300px;
+    margin-top: 10px;
+    padding-left: 10px;
+    /* overflow: auto; */
+}
+
+/* .content-stepInAddTour{
+    width: 500px !important;
+} */
+.content-step i {
+    width: 35px;
+    height: 35px;
+    background-color: #ce1212;
+    text-align: center;
+    color: #f3f3f3;
+    line-height: 35px;
+    border-radius: 50%;
+    font: 13px;
+}
+
+.content-step span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item ::after {
+    content: ' ';
+    position: absolute;
+    left: -2px;
+    top: 1px;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #f07167;
+
+}
+
+.item ::before {
+    left: 2px;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #3b3b3b;
+    width: 1px;
+}
+
+.Viewdetails {
+    margin-top: -100px !important;
+}
+
+.steps-Tour {
+    border: 2px solid #ce1212;
+    height: 400px;
+    overflow: auto;
+}
+
+.infoTourDetails {
+    width: 400px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+.infoTourDetails .name-Tour {
+    border-bottom: 1px solid #959292;
+    margin-top: 10px;
+}
+
+.infoTourDetails .name-Tour p {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Roboto";
+
+}
+
+.DateIcone {
+    font-size: 30px;
+    color: #d83333;
+}
+
+.Join-In-Details {
+    width: 215px;
+    height: 35;
+    border-radius: 25px;
+    border-color: #cfbcbc !important;
+}
+
+.Join-In-Details:hover {
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+}
+
+.memberpartcipateIcon {
+    font-size: 30px;
+    margin-left: 30px !important;
+    color: #ce1212;
+
+}
+
+.memberpartcipateIcon span {
+    font-size: 20px;
+
+}
+
+.Add-WishListIcon,
+.WeatherInDetails {
+    font-size: 30px;
+    color: #ce1212;
+}
+
+.WishList-In-Details {
+    background-color: #1f1f2400;
+    border-color: #c0c0cd00;
+}
+
+.shareTourindetailsIcon {
+    font-size: 30px;
+    color: #ce1212;
+}
+
+.shareTourindetails {
+    background-color: #1f1f2400;
+    border-color: #c0c0cd00;
+}
+
+.mapInDtials {
+    border: 2px solid red;
+    height: 400px;
+    overflow: auto;
+}
+
+/* ============================Descriptin Section =========================*/
+.descriptionP {
+    background-color: #ce1212;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    margin-left: 25px;
+    /* padding-left: 20px; */
+    padding-top: 10px;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.typeTourDescriptionDetails {
+    border: 1px solid #7e2929;
+    width: auto;
+    height: 40px;
+    text-align: center;
+    padding: 7px;
+    font-size: 17px;
+
+}
+
+.typeTourDescriptionDetails:hover {
+    border: 1px solid #94a2ac;
+    font-weight: 500;
+
+}
+
+.fullDescriptionInDetails {
+    width: 60%;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: 10px;
+    border-top: 1px solid #6c757d;
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.fullDescriptionInDetails span {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Bebas Neue"
+
+
+}
+
+/* ==========================Feedback Section In Details Page =============== */
+#feedbackSectinInDetails {
+    height: 660px;
+
+}
+
+.feedbackPart h4,
+.introSuggest h4,
+.introNearTour h4,
+.interoFollower h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #7f7f90;
+    text-transform: uppercase;
+
+
+
+}
+
+.introfeedback,
+.introSuggest p,
+.introNearTour p,
+.interoFollower p {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: "Amatic SC";
+}
+
+.feedbackPart p span,
+.introSuggest p span,
+.introNearTour p span,
+.interoFollower p span {
+    color: #ce1212;
+}
+
+.feedbackImg {
+    width: 300px;
+    height: 300px;
+    margin-left: 12%;
+}
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    /* display the stars from right to left */
+    align-items: center;
+    justify-content: flex-start;
+    /* align the stars to the left */
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 0.1em;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!Return cheack code  */
+.rating label,
+.rating label:hover~label,
+.rating input:checked~label {
+    background-color: #ffc10700;
+}
+
+.rateFeedback:hover,
+.rating input:checked~label,
+.rating input:checked~label {
+    color: #ffc107;
+
+}
+
+.givefeedback {
+    font-family: "Bebas Neue";
+    font-weight: 900;
+    color: #ce1212;
+}
+
+.feedbackexperance {
+    color: #48484a;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.recommedCompany {
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.LikelyORNot,
+.noteprivet {
+    color: #48484a;
+    font-size: 14px;
+}
+
+.pBoXfeedback {
+    margin-left: 13px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.feedbackImgintro {
+    height: 10%;
+    width: 35%;
+    margin-left: 5px;
+
+
+}
+
+.feedbackIntroContant {
+    width: 400px;
+    height: 300px;
+    background-color: #dfdfdfad;
+    margin-top: 5%;
+    margin-left: -10%;
+    /* margin-left: -400px !important; */
+    border-radius: 25px;
+}
+
+.feedbackInDetails {
+    font-size: 24px;
+    font-family: "Bebas Neue";
+    color: #ce1212;
+
+
+}
+
+.pargeaphInteroFeedback {
+    font-size: 18px;
+}
+
+/* .pargeaphInteroFeedback span{
+    font-weight: 600;
+
+
+  } */
+.textfeedback {
+    width: 370px;
+    height: 500;
+    border: 2px solid #a93e3e;
+}
+
+.SubAndCancel {
+    font-weight: 500;
+    font-size: 18px;
+    border-color: #f0eded00;
+    background-color: rgb(201, 47, 30);
+    color: white;
+}
+
+.DetailsPage {
+    margin-top: -60px;
+}
+
+/* budget  */
+
+.range {
+    height: 80px;
+    width: 400px;
+    /* background:#b74444; */
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+}
+
+.range .sliderValue {
+    position: relative;
+    width: 100%;
+}
+
+
+
+#spanbud {
+    position: absolute;
+    /* height:45px;
+    width:380px; */
+    color: white;
+    font-weight: 500;
+    top: -30px;
+    /* transform: translateX(-50%) scale(1);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out; */
+    line-height: 55px;
+    z-index: 1;
+}
+
+.range .sliderValue span:after {
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background: red;
+    /* text-align: center; */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    border: solid 3px #fff;
+    z-index: -2;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.range .field {
+    /* background-color: #6c757d; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field .value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.range .field .value.left {
+    left: -22px;
+}
+
+.range .field .value.right {
+    right: -43px;
+}
+
+/* Rang line */
+.range .field input {
+    -webkit-appearance: none;
+    height: 3px;
+    background: #ddd;
+    border-radius: 5px;
+    /* outline:none;
+    border:none; */
+    width: 100%;
+}
+
+.range .field input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid #ce1212;
+    cursor: pointer;
+}
+
+/* ========notefication Icon  */
+.notefication,
+.ViewClients,
+.AddClients,
+.wishlist,
+.viewSuggest {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: #ce1212;
+    border-radius: 50%;
+    margin: 7px;
+    color: white;
+    border: #07070700;
+}
+
+
+
+
+.WishListIcon:hover,
+.Weather:hover,
+.moreDetailsAdmin:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.WishListIcon,
+.Weather-icon,
+.moreDetailsAdmin {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    background-color: #ce1212;
+}
+
+.more {
+    width: 30px;
+    height: 30px !important;
+    padding-top: 10px;
+    color: white;
+    border-radius: 50px;
+    background-color: #ce1212;
+
+}
+
+.iconadmin,
+.noteficationIcon,
+.WishListIcon,
+.viewSuggestIcon {
+    font-size: 18px !important;
+    color: white;
+    /* transform: scale(1); */
+    /* animation: infinite; */
+
+}
+
+.noteficationIcon {
+    animation: up 1s infinite;
+}
+
+@keyframes up {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 1.1;
+    }
+}
+
+/* .more i{
+    font-size: 18px;
+  } */
+.SuggestDescriotion img {
+    width: 350px;
+    height: 350px;
+    margin: 50px;
+}
+
+.fillSuggest {
+    width: 700px;
+    height: 450px;
+    border: 2px solid #ce1212;
+    border-radius: 25px;
+    background-color: rgb(237, 236, 236);
+    margin: 50px;
+
+}
+
+.suggestTour {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ce1212;
+    font-family: "Bebas Neue";
+}
+
+.locationIcon,
+.pictureTourIcon .DateIcon {
+    font-size: 24px;
+    color: #ce1212;
+}
+
+.location,
+.dateForSuggest {
+    width: 400px;
+    border-radius: 25px;
+}
+
+.locationP,
+.dateSuggestP {
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.suggestButton {
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: white;
+    background-color: #ce1212;
+    border: 2px solid white;
+}
+
+.viewSuggetClient {
+    width: 400px;
+    height: 60px;
+}
+
+.suggestButton:hover {
+    /* background-color: rgb(203, 201, 201);
+ color: #ce1212; */
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+.noteSuggest {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7f7f90;
+    text-transform: uppercase;
+}
+
+.mainAdminCurd {
+    background-color: #edebeb;
+}
+
+.contentCurdPage {
+    border-radius: 25px;
+    background-color: white;
+    width: 90%;
+    justify-content: center;
+    border: 2px solid #ce1212;
+
+
+}
+
+.SeachSection {
+    background-color: #d9d7d79b;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom: 1px solid #ce121263;
+}
+
+.searchP {
+    font-size: 24px;
+    color: #ce1212;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.AddTourOwner {
+    background-color: #6c757d;
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 35%;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #1a1919;
+    color: #ce1212;
+}
+
+.AddMorePlace {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 90%;
+    border-radius: 50px;
+    background-color: white;
+    border: 2px solid #1a1919;
+    color: #ce1212;
+}
+
+.AddTourOwner:hover {
+    background-color: #ce1212;
+    color: white;
+    transition: .5sec;
+    border-color: white;
+}
+
+.AdminSearch {
+    width: 500px;
+    /* background-color: #070707; */
+    /* border: 3px solid #343434; */
+
+}
+
+.searchIcon {
+    /* background-color: #48484a; */
+    width: 35px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: -40px;
+    border-radius: 50px;
+
+}
+
+/* .oveviewAdmin{
+    margin-top: 10px;
+
+}
+.numClientComapany{
+
+    width: 50%;
+
+
+
+}
+.numClient,.numCompany{
+    background-color: #eaedf0;
+    margin-right: 30px;
+    width: 190px;
+    height: 150px;
+
+    border-radius: 25px;
+    border: 2px solid #ce1212;
+
+
+}
+.numClient p,.numCompany p{
+font-size: 24px;
+font-family: "Bebas Neue";
+padding-top: 20px;
+
+
+}
+.numClient .num,.numCompany .num{
+   font-size: 40px;
+
+}
+.ViewClients,.AddClients{
+margin-top: -9px;
+margin-left: -3px;
+} */
+/* ====================================Error 404 page  */
+/* .notFoundPage{
+    background-color: #000;
+
+
+    margin-left: 3000px !important;
+} */
+
+/* .notfoundContent  {
+    background-color: #bc4242;
+    width: 100%;
+    height: 40%;
+} */
+.imgNotFound {
+    margin-left: 30%;
+}
+
+/* noooooooooooorrrrrrrrrrr */
+.AddtimeAndDate {
+    /* background-color: #e2e0e0bd; */
+    border-left: 5px solid #37373f;
+
+}
+
+.places,
+.descrptiontTourInOwner {
+    background-color: #e4e4e49b;
+    border-top: 1px solid;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-top: 5px;
+    padding: 10px;
+    /* border-radius: 20px; */
+
+    border-bottom: 8px solid #971616;
+    /* width: 500px; */
+}
+
+/* .dayyyy{
+    margin-left: -500px;
+} */
+
+.locationIcon {
+    font-size: 24px !important;
+
+}
+
+.removeAmin {
+    margin-top: -400px;
+
+    margin-left: 24px;
+    font-size: 24px;
+}
+
+.fillTourNameAdded,
+.fillpriceTour,
+.fillTourDateAdded,
+.fillTouPlaceAdded {
+    border: 2px solid #ce1212;
+    margin-left: 10px;
+    border-radius: 25px;
+    padding-left: 3px;
+    height: 50px;
+
+}
+
+.fillTourDateAdded {
+    width: 200px !important;
+}
+
+.TourName,
+.priceTour,
+.fillTime,
+.fillplaces {
+    font-size: 20px;
+    font-family: "Bebas Neue";
+    /* . */
+}
+
+.TourInfo,
+.TourTime,
+.addDscriptionIntro,
+.shortDescription,
+.UserInfo {
+    color: #ce1212;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infoAddTour,
+.change_info_user {
+    border-left: 5px solid #37373f;
+    margin-left: 70px;
+}
+
+.change_info_user .editImage,
+.editUserName {
+    color: #1a1919;
+}
+
+
+.addDscriptionIntro,
+.shortDescription {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.writedescription {
+    margin-left: 80px;
+    height: 150px;
+    width: 400px;
+    border: 2px solid #a4a4a4;
+}
+
+/* .fillTime{
+    font-size: 20px;
+} */
+/* .introVisited{
+    .
+} */
+/* .descrptiontTourInOwner{
+    background-color: ;
+} */
+.addDscriptionIntro {}
+
+.radioShortDescrption {
+    background-color: #b7b7b9;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-left: 100px; */
+    display: inline-block;
+    margin-top: 10px;
+
+}
+
+.labelChoice {
+    font-size: 20px;
+
+
+}
+
+.radioChoice {
+    width: 20px;
+    height: 20px;
+    /* display: inline-block;
+   position: absolute; */
+    border-radius: 50%;
+    /* margin-top: 3px; */
+    /* opacity: 0;
+   cursor: pointer; */
+
+    /* border-radius: 50px; */
+}
+
+.intro_editing {
+
+    /* background-color: #e2e0e0bd;
+         border: 2px solid #898989; */
+    /* border-radius: 25px ; */
+}
+
+
+/*================================= new new new  ======================================================*/
+
+
+/* Review in profile  */
+.review_inProfile,
+.folloewrs,
+.editing {
+
+    border-color: #00000000;
+    background-color: #00000000;
+    font-size: 18px;
+    color: #3e3e3eeb
+}
+
+.folloewrs,
+.editing {
+    /* font-size: 16px ; */
+    font-weight: 600;
+    font-family: "";
+}
+
+/* #btn-follower{
+width: 200px ;
+margin-left: -50px;
+} */
+.link_review :hover {
+    color: #000;
+
+
+}
+
+.content_review {
+    /* margin-left: 100px; */
+}
+
+.reviewPage {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    margin-left: 150px;
+}
+
+#btn-lookfeedbackWeb {
+    display: block;
+    background-color: #37373f00;
+    color: #ce1212;
+    border-color: #00000000;
+    font-size: 20px;
+    font-family: "Bebas";
+    font-weight: 600;
+}
+
+.orSentane {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    font-family: "Delicious Handrawn";
+}
+
+#btn-lookfeedbackWeb {
+    display: block;
+}
+
+
+/* .review_content {
+    background-color: #7e2929;
+} */
+
+.contact_Profile {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-family: "Bebas";
+    background-color: #ce1212;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #ce1212;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+.suggestFollower_inMain {
+    width: 80px;
+    height: 80px;
+}
+
+.viewDetails {
+    position: absolute;
+    top: 10%;
+    transform: rotate(-45deg);
+    width: 117px;
+    height: 29px;
+    left: -24px;
+    background-color: #9f2727;
+    color: white;
+    border: 1px solid #ce1212;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.viewDetails a {
+    color: white;
+}
+
+.feebackYallaRehlla {
+    height: 140px;
+    overflow: auto;
+}
+
+.feebackClient_img {
+    height: 90px;
+    width: 90px;
+}
+
+.suggestApproved {
+    margin-left: -100px;
+    width: 40px;
+    height: 40px;
+    margin-top: 73px;
+    border-radius: 50px;
+    color: #ce1212;
+    border: 1px solid #ce1212;
+}
+
+.infoFeedbackTour p {
+    /* background-color: #bab3b3; */
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bebas Neue";
+    padding-left: 74px;
+}
+
+.infoSuggestTour p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bebas Neue";
+}
+
+.Activity,
+.detailesInfo {
+    overflow: auto !important;
+    height: 300px !important;
+}
+
+.infoFeedbackTour p {
+    /* background-color: #bab3b3; */
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Bebas Neue";
+    padding-left: 3px;
+}
+
+
+
+.following_btn {
+    /* border-right: 1px solid black; */
+    border-left: 1px solid black;
+    padding-left: 1%;
+}
+
+.edit_btn {
+    border-right: 1px solid black;
+    padding-right: 1%;
+
+
+}
+
+/* ==================== Responsive Suggest Tour in home page  */
+@media (max-width: 868px) and (max-width: 1024px) {
+    .locationIcon {
+        display: none;
+    }
+
+    .DateIcon {
+        display: none;
+    }
+
+    .fillSuggest {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .SuggestDescriotion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fillSuggest {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .informationSuggest {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .SuggestDescriotion img {
+        max-width: 100%;
+    }
+
+    .locationIcon {
+        display: none;
+    }
+
+    .DateIcon {
+        display: none;
+    }
+
+
+}
+
+
+/* =================================== Tour Detiles ========================================= */
+@media (max-width: 1100px) {
+    .Viewdetails {
+        flex-direction: column;
+    }
+
+    .infoTourDetails,
+    .steps-Tour,
+    .mapInDtials {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedbackImgintro {
+        display: none;
+    }
+
+    .feedbackIntroContant {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .prevFeedback-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+.PuttingActivity {
+    padding-left: 30%;
+}
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+
+/* nave */
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+}
+
+
+@media (min-width: 368px) and (max-width: 1200px) {
+    .why-us .container {
+        padding-top: 20px;
+        /* Add some space at the top of the container */
+    }
+
+    .why-us .row {
+        flex-direction: column;
+        /* Stack the columns vertically on smaller screens */
+    }
+
+    .why-us .col-lg-8 {
+        margin-top: 20px;
+        /* Add space between the first column and the second row */
+    }
+
+    .CounterownerTour {
+        margin-left: -10% !important;
+        /* margin-right: auto; */
+    }
+
+    .Happy {
+        margin-left: -1% !important;
+        /* margin-right: auto; */
+    }
+
+    .account-login p {
+        font-weight: 500;
+    }
+
+    .PuttingActivity {
+        padding-left: 30%;
+    }
+
+    .jjj {
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .editInfoForAdmin {
+        width: 95%;
+    }
+}
+
+@media (max-width: 800px) {
+    .Booking-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .cancleBookTour {
+        margin-left: 100px !important;
+
+    }
+
+    .range.container {
+        display: none;
+    }
+}
+
+
+/* responsive in Admin  and i add navbar2 add name  */
+@media (min-width: 500px) and (max-width: 1200px) {
+    .navbar2 {
+        display: flex;
+        /* margin-top: 30px !important; */
+        /* margin-left: 3px;  */
+        margin-right: 30%;
+
+    }
+
+
+    .profileInNave {
+        display: none;
+    }
+
+    .SettingProfileINheader {
+        margin-top: -40px;
+        margin-left: 103%;
+    }
+
+    .more.container {
+        display: none;
+    }
+}
+
+
+.location {
+    width: 370px;
+}
+
+@media (max-width: 868px) {
+    .locationIcon {
+        display: none;
+    }
+
+    .DateIcon {
+        display: none;
+    }
+
+    .SuggestDescriotion {
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .fillSuggest {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 500px;
+        height: 550px;
+    }
+
+}
+
+@media (min-width:800) {
+    .fillSuggest {
+        /* margin-top: 20px;
+        width: 100%;
+        max-width: 500px; */
+        height: 550px !important;
+    }
+}
+
+
+.EditTourPop {
+    display: block;
+    /* Hide popup by default */
+    position: fixed;
+    /* Position the popup */
+    z-index: 2;
+    /* Make sure popup is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a dark background */
+    /* overflow-x: visible;
+overflow-y: hidden; */
+    /* overflow: hidden; */
+}
+
+.createPostPop {
+    display: block;
+    /* Hide popup by default */
+    position: fixed;
+    /* Position the popup */
+    z-index: 2;
+    /* Make sure popup is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a dark background */
+    /* overflow-x: visible;
+overflow-y: hidden; */
+    /* overflow: hidden; */
+}
+
+/* weather */
+.weatherPop , .editUserInfoPop {
+    display: none;
+    /* Hide popup by default */
+    position: fixed;
+    /* Position the popup */
+    z-index: 2;
+    /* Make sure popup is on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Add a dark background */
+    /* overflow-x: visible;
+overflow-y: hidden; */
+    /* overflow: hidden; */
+}
+
+.weather-contenrt {
+    background-color: #f4f1f1fd;
+    /* White background */
+    margin: 10% auto;
+    /* Center content */
+    padding: 20px;
+    border: 1px solid #c92020;
+    width: 40%;
+    border-radius: 50px;
+    /* height: 500px; */
+    /* border-color: 10px !important; */
+}
+
+.weather-contenrt .itemWeather {
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: #7575764a;
+    border-radius: 25px;
+    width: auto;
+}
+
+.weather-contenrt h3 {
+    text-transform: capitalize;
+    /* font-family: 'Roboto Slab'; */
+    color: #ce1212;
+    font-size: 30px;
+    font-family: "Delicious Handrawn";
+    font-weight: 300;
+}
+
+.weather-contenrt .itemWeather {
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: #7575764a;
+    border-radius: 25px;
+    width: auto;
+}
+
+.weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-forecast {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.day-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.day-temp {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.popup-screen-weather {
+    z-index: 3;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.001s ease;
+    transition-property: visibility;
+}
+
+.popup-screen-weather.active {
+    visibility: visible;
+}
+
+.popup-box-weather {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    max-width: 900px;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    transform: scale(0);
+    transition: 0.001s ease;
+    transition-property: transform;
+}
+
+.popup-screen-weather.active .popup-box-weather {
+    transform: scale(1);
+}
+
+.popup-box-weather h2 {
+    font-size: 2.1em;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    right: 0;
+    margin: 15px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.01s ease;
+    transition-property: opacity;
+    color: #ce1212;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.close-btn:hover {
+    opacity: 0.5;
+}
+
+
+
+@media (max-width:1199px) {
+    .notefication-content {
+        width: auto !important;
+        /* Make the content take full width on smaller screens */
+        /* height: auto; */
+        /* padding-left: -30%; Adjust the padding for smaller screens */
+        margin-left: -10%;
+        padding-left: -30px;
+        /* justify-content: center; */
+        margin-top: 30%;
+    }
+
+    .itemNotefication {
+        margin-left: 10% !important;
+        width: 90%;
+        height: 90px;
+        justify-content: center;
+    }
+}
+
+@media (min-width:1200px)and (max-width:1300px) {
+    .notefication-content {
+        width: 92% !important;
+        /* Make the content take full width on smaller screens */
+        /* height: auto; */
+        /* padding-left: -30%; Adjust the padding for smaller screens */
+        margin-left: 30% !important;
+        padding-left: -30px;
+        /* justify-content: center; */
+        /* margin-top: 30%; */
+    }
+
+    .itemNotefication {
+        margin-left: 10% !important;
+        width: 83%;
+    }
+
+    .noteficationPop {
+
+        width: 51%;
+        margin-left: 370px;
+        margin-top: 10%;
+    }
+}
+
+
+
+
+@media (min-width:300px) and (max-width:900px) {
+    .wishlist-content {
+        width: 100% !important
+    }
+
+}
+
+@media (min-width:900px) and (max-width:1300px) {
+    .wishlist-content {
+        width: 50% !important
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .imageSign {
+        display: none;
+    }
+
+    .infoSignUp {
+        max-width: 300px;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .feedbackImgintro {
+        display: none;
+    }
+
+    .feedbackIntroContant {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .prevFeedback-content,
+    .feedback-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .Viewdetails {
+        flex-direction: column;
+    }
+
+    .infoTourDetails,
+    .steps-Tour,
+    .mapInDtials {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .imageSign {
+        display: none;
+    }
+
+    .infoSignUp {
+        max-width: 300px;
+
+    }
+
+}
+
+
+@media (min-width: 300px) and (max-width: 1000px){
+.suggestList-content {
+    width: 80% !important;
+}
+
+}

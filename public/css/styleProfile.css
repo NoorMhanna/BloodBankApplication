@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&family=Roboto:ital,wght@1,300&display=swap');
+
+
+
+
+
+/* pofile   */
+.contentProfile {
+    width: 65% !important;
+    height: 90% !important;
+    background-color: #ffffff;
+    border: 2px solid rgba(206, 18, 18, 0.8);
+    margin: auto;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
+.informationsProfile {
+    width: 100%;
+    /* background-color: #845959; */
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    /* margin-left: 40%; */
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.info-item-profile {
+    float: left;
+    width: 15%;
+    height: 30px !important;
+    padding: px;
+    height: 50px;
+    margin-left: 2px;
+    border-right: 1px solid black;
+    margin-bottom: 10px;
+
+}
+
+.info-item-profile :hover,
+.info-item-profile :focus {
+    color: #9a3636;
+}
+
+.info-item-profile span {
+    font-weight: 600;
+    font-family: "";
+
+}
+
+.columnFirst {
+    margin-left: 32%;
+}
+
+.lastColumn {
+    border-right: 1px solid rgba(201, 196, 196, 0);
+
+}
+
+.recent-Activity {
+    margin-top: 30px;
+}
+
+.recent-Activity img {
+    width: 260px;
+    height: 260px;
+
+}
+
+.headP-RecentActivity {
+    font-size: 22px;
+    margin-left: 10px;
+    font-family: "Amatic+SC";
+    /* color: #ce1212; */
+    font-weight: 600;
+
+}
+
+.profile_post {
+    width: 260px;
+    /* height: 320px; */
+    background-color: #d4d2d2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.wishlist.likepost {
+    background-color: #ce121200;
+    color: #070707;
+
+}
+
+.WishListIcon .likepost {
+    background-color: #ce121200;
+}
+
+.numberLikesPost {
+    margin-left: -170px;
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    /* background-color: #000; */
+}
+
+.headerProfile {
+    margin-top: 20px;
+
+}
+
+.Client_img {
+    width: 100%;
+    /* background-color: #000; */
+    margin-top: 20px;
+
+
+}
+
+.Client_img img {
+    width: 100px;
+    height: 100px;
+    margin-left: 43%;
+    margin-bottom: 20px;
+    border: 2px solid #ce1212;
+}
+
+.shar_profile,
+.autoSearch {
+    width: 400px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+
+}
+
+.addActivity {
+    margin-left: -40px;
+    color: #ce1212;
+    /* background-color: #ce1212; */
+    border-color: white;
+    background-color: white;
+    border-radius: 50px;
+    height: 30px;
+    margin-top: 5px;
+}
